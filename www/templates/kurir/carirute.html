@@ -1,0 +1,58 @@
+<ion-header-bar align-title="left" class="bar-balanced mapOrderId">
+	<div class="buttons">
+		<a href="#/orderanId/{{id}}" class="button">Back</a>
+	</div>
+	<h1 class="title">Cari Rute</h1>
+
+</ion-header-bar> 
+<ion-view cache-view="false">
+	<ion-content id="testMap">
+		<ion-refresher
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()">
+		</ion-refresher>
+	<a href="#/rute/I">
+		<div class="card">
+			<div class="item item-divider">
+				Rute I
+			</div>
+			<div class="item item-text-wrap">
+				Jarak : {{jarak}}
+			</div>
+			<div class="item item-divider">
+
+			</div> 
+		</div>	
+	</a>
+	<a href="#/rute/II">
+		<div class="card">
+			<div class="item item-divider">
+				Rute II
+			</div>
+			<div class="item item-text-wrap">
+				Jarak : {{jarak2}}
+			</div>
+			<div class="item item-divider">
+
+			</div>
+		</div>
+
+	</a> 
+	<a href="#/rute/III">
+		<div class="card">
+			<div class="item item-divider">
+				Rute III
+			</div>
+			<div class="item item-text-wrap">
+				Jarak : {{jarak3}}
+			</div>
+			<div class="item item-divider">
+			</div>
+		</div>	
+	</a>
+	
+	<div ng-hide="satu" id="map" data-tap-disabled="true"></div>
+	<div ng-hide="dua" id="map2" data-tap-disabled="true"></div>
+	<div ng-hide="tiga" id="map3" data-tap-disabled="true"></div>
+</ion-content>
+</ion-view>

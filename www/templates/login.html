@@ -1,0 +1,26 @@
+<ion-view view-title="Login">
+<ion-header-bar class="bar bar-header bar-balanced">
+		<a class="button ion-arrow-left-b" href="#/home"> Back</a>
+		<h1 class="title">Greenzone Laundry</h1>
+		</ion-header-bar>
+	<ion-content>
+		<h2 class="text-center ion-person-add"> Member Login</h2>
+
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Nama</span>
+		<input type="text" placeholder="Nama" ng-model="login.username">
+		</label>
+
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Password</span>
+		<input type="password" placeholder="Password" ng-model="login.pass">
+		</label>
+	
+		<a class="button button-block button-balanced ion-log-in" ng-click="login()"> Login</a>
+
+	<p class="text-center">
+	Belum Daftar? <a href="#/register"> Register </a><br>
+	<!-- Lupa password ?<a href="#/login">Klik Disini</a> -->
+	</p> 
+</ion-content>
+</ion-view>

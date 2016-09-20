@@ -1,0 +1,29 @@
+<ion-header-bar align-title="left" class="bar-balanced mapOrderId">
+	<div class="buttons">
+		<a href="#/orderan" class="button">Back</a>
+	</div>
+	<h1 class="title">Data Pesanan</h1>
+
+</ion-header-bar>
+<ion-view view-title="Data Pesanan">
+	<ion-content>
+		<div class="card">
+			<div class="item item-text-wrap">
+				Pesanan : {{test.nama}}
+			</div>
+		</div>  
+
+		<div class="padding" id="test">
+			<a href="#/goto" class="button button-block button-balanced" ng-click="tampilmap()">
+				View Location
+			</a>
+			<a href="#/carirute" class="button button-block button-balanced" ng-click="cari()">
+				Cari Rute
+			</a>
+			<a href="#/harga" class="button button-block button-balanced" >
+				Harga
+			</a>
+		</div> 
+
+	</ion-content>
+</ion-view> 

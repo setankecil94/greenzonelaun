@@ -1,0 +1,51 @@
+<ion-view view-title="Register">
+<ion-content>
+<ion-header-bar align-title="left" class="bar bar-header bar-balanced">
+<a class="button ion-arrow-left-b" href="#/home"> Back</a>
+<h1 class="title">Greenzone Laundry</h1>
+</ion-header-bar>
+
+<div class="list">
+ <h2 class="text-center ion-person-add"> Member Register</h2>
+
+
+</body>
+</html>
+ <label class="item item-input item-stacked-label">
+   <span class="input-label">Nama Lengkap</span>
+   <input type="text" placeholder="Masukkan Nama" name="nama" ng-model="daftar.nama">
+ </label>
+
+ <label class="item item-input item-stacked-label">
+   <span class="input-label">Username</span>
+   <input type="text" placeholder="Masukkan Username" name="username" ng-model="daftar.username">
+ </label>
+
+  <label class="item item-input item-stacked-label">
+   <span class="input-label">Password</span>
+   <input type="password" placeholder="Masukkan Password" name="password" ng-model="daftar.pass">
+ </label>
+ 
+ <label class="item item-input item-stacked-label">
+   <span class="input-label">Alamat</span>
+   <input type="text" placeholder="Masukkan Alamat" name="alamat" ng-model="daftar.alamat">
+ </label>
+
+ <label class="item item-input item-stacked-label">
+   <span class="input-label">No.HP</span>
+   <input type="tel" placeholder="Masukkan No HP" name="nohp" ng-model="daftar.nohp">
+ </label>
+
+ <label class="item item-input item-stacked-label">
+   <span class="input-label">Email</span>
+   <input type="email" placeholder="Masukkan Email" name="email" ng-model="daftar.email">
+ </label>
+ <a class="button button-large button-balanced button-block padding ion-android-person-add" ng-click="daftar()">
+   REGISTER
+ </a>
+ <a class="button button-large button-balanced button-block padding ion-log-in" href="#/login">
+   LOGIN
+ </a>
+</div>
+</ion-content>
+</ion-view>

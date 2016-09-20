@@ -1,0 +1,18 @@
+<ion-header-bar class="bar-balanced mapOrderId">
+	<div class="buttons">
+		<a href="#/kberanda" class="button">Back</a>
+	</div>
+	<h1 class="title">Orderan</h1>
+
+</ion-header-bar>
+<ion-view>
+	<ion-content class="padding orders">
+		<div class="list" ng-repeat="data in test">
+			<a class="item item-icon-left item-icon-right" href="#/orderanId/{{data.id}}">
+				<i class="icon ion-person"></i>
+				{{data.nama}}
+				<i class="icon ion-arrow-right-c"></i>
+			</a>
+		</div>
+	</ion-content>
+</ion-view> 
